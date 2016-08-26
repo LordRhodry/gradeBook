@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html  ng-app="app">
+  <head>
+    <title>GradeBook - codeSpark</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  <!--  <script type="text/javascript" src="javascripts/roster.js"></script> -->
+    <script src="javascripts/angular.js"></script>
+    <script type="text/javascript" src="javascripts/gradeBook.js"></script>
+     
+    
+  </head>
+  <body>
+  <div id="gradientBackground"></div>
+  <div id = "container">
+
+      <div id="header">
+            <div id="headerBackground"></div>
+            <div id="logoText"></div>
+            <div id ="headerLine"></div>
+        </div>
+
+    <div id="tableBackground"> <!-- will contain all the important elements -->
+        <div id="innerTable">
+        <div id="topvertbar"></div> <!-- trouble with the table creating weird spacing on the top bar this tries to replaces those with a continuous line.-->
+          <table ng-controller="GradeController" id="theTable">
+              <tr>
+                  <th class="leftMost"> </th>
+                  <th  ng-repeat="assess in assessments">
+                     <div class="assessmentId">
+                        <span class="mainName">{{assess.testName}}<span> <br> 
+                        <span class ="subName">{{assess.testDate}}</span> 
+                      </div>
+                      <div class="assessmentAvg">
+                        <div class="testAvgBackground">
+                          <span class="gradeDisplay">{{gradeAvg(assess, $last)}}</span>
+                        </div>
+                      </div>
+
+                  <th>
+              </tr>
+              <tr ng-repeat="student in roster">
+                  <td class="leftMost">
+                      <div class="studentContainer">
+                        <div class="studentId">
+                            <span class="mainName">{{student.firstname}}</span> <br>
+                            <span class ="subName">{{student.lastname}}</span>
+                        </div>
+                      
+                        <div class="averageGrade">
+                          <span class="gradeDisplay">{{studAvg(student.classId)}}</span>
+                        </div>
+                      </div>
+                  </td>
+
+                  <td ng-repeat="assess in assessments" class="gradeCell {{$parent.$last}}">
+ 
+                      <span class="gradeDisplay">{{findGrade(assess.grades, student.classId)}}</span>
+
+                  </td>
+              </tr>
+          </table>
+         
+
+        </div>
+
+    </div>
+
+   </div>
+  
+
+
+
+    </body>
+  </html>

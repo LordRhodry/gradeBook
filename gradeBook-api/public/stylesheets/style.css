@@ -1,0 +1,180 @@
+html{
+	height : 100%;
+}
+
+body {
+  /*padding: 50px;*/
+  margin : 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height : 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+#gradientBackground {
+	position : fixed;
+	top : 0px;
+	bottom:0px;
+	left : 0px;
+	width:100%;
+	min-height:100%;
+	background: -webkit-linear-gradient(rgb(68,197,255), rgb(44,93,255)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(68,197,255), rgb(44,93,255)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(68,197,255), rgb(44,93,255)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(68,197,255), rgb(44,93,255)); /* Standard syntax */
+}
+#innerTable {
+	position : relative;
+	padding : 5%;
+	font-size : 20px;
+	width:90%;
+
+}
+
+#topvertbar {
+	background-color:#e9e5e2;
+	height:2px;
+	width:100%;
+	position:relative;
+	top:5%;
+	
+}
+
+table {
+	border-spacing: 25px 0;
+}
+
+ td {
+	border-top: 2px solid #e9e5e2;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+td {
+	/*height : 100%;*/
+}
+
+.testAvgBackground {
+	width : 100%;
+	padding-top : 10px;
+	background-color : white;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	margin: 0 auto;
+}
+
+
+
+
+.leftMost {
+	border-right: 2px solid #e9e5e2;
+}
+
+#container {
+	
+}
+
+#header {
+	position : fixed;
+	width : 100%;
+	height:20px;
+	top : 50px;
+	left : 0px;
+	z-index: 10;
+}
+
+#headerBackground {
+	background-image: url("/images/headerBackground.png");
+	width : 100%;
+	height: 87px;
+	background-repeat: repeat-x;
+	position : absolute;
+	top : 0px;
+	left : 0px;
+}
+#logoText {
+	background-image: url("/images/logoText.png");
+	width : 219px;
+	height:71px;
+	background-repeat: no-repeat;
+	position : absolute;
+	top : 0px;
+	left : 0px;
+	z-index: 2;
+}
+#headerLine {
+	background-image: url("/images/headerLine.png");
+	width : 100%;
+	height: 8px;
+	background-repeat: repeat-x;
+	position : absolute;
+	top : 85px;
+	left : 0px;
+}
+
+#tableBackground {
+	position : absolute;
+	top: 200px; /* might need to be revisited later for better responsiveness of layout*/
+    margin-left: 5%;
+   margin-right: 5%; 
+    margin-bottom: 10%;
+    min-width: 80%;
+	background-color: rgb(245,246,244);
+	border-radius: 10px;
+}
+.assessmentId {
+	 -ms-transform: rotate(-60deg); /* IE 9 */
+    -webkit-transform: rotate(-60deg); /* Chrome, Safari, Opera */
+    transform: rotate(-60deg);
+    height : 200px;
+    min-width : 100px ;
+    transform-origin: 0% 0%; /* need to check if webkits are necessary here*/
+    position : relative;
+    top : 140px;
+}
+
+.assessmentAvg {
+	text-align : center;
+}
+
+.studentId{
+
+	display: inline-block;
+}
+.studentContainer {
+	text-align : center; 
+	width : 200px;
+	position : relative;
+}
+.averageGrade{
+	position : absolute;
+	margin: auto;
+	right : 2px;
+	display:inline-block;
+	top:0;
+	bottom:0;
+	height: 22px;
+}
+.mainName{
+	color:blue;
+}
+.subName{
+	color:grey;
+	font-size: 16px;
+}
+
+.gradeDisplay {
+	color : green;
+	font-weight: bold;
+}
+
+.gradeCell {
+	text-align : center;
+	background-color: white;
+}
+.true {
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+
+}
