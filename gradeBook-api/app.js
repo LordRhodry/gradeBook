@@ -15,7 +15,7 @@ var mongoose = require('mongoose');
 // Use native Node promises
 mongoose.Promise = global.Promise;
 // connect to MongoDB
-mongoose.connect('mongodb://localhost/gradeBook-api')
+mongoose.connect('mongodb://<LordRhodry>:<maelwaed79>@ds017636.mlab.com:17636/gradebook-api')
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
