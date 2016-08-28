@@ -28,7 +28,7 @@ angular.module('app', [])
 
     $scope.gradeAvg = function(assessElt , test)
     {
-      console.log(test);
+      //console.log(test);
         var tot = 0;
         for ( gradeEltid in assessElt.grades)
         {
