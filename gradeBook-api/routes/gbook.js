@@ -16,7 +16,9 @@ router.get('/', function(req, res, next) {
   });
 });
 
-/* POST /todos */
+
+// coping all this unused code from a previous tutorial as a quick reference to an implementation example for post , id get ...
+/* POST /todos  */
 /*router.post('/', function(req, res, next) {
   Todo.create(req.body, function (err, post) {
     if (err) return next(err);
